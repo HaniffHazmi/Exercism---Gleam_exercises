@@ -1,0 +1,10 @@
+pub fn reply(guess: Int) -> String {
+  case guess {
+      0 -> "Zero"
+      42 -> "Correct"
+      41 | 43 -> "So close"
+      i if i < 41 -> "Too low"
+      i if i > 43 -> "Too high"
+      _ -> "Possible value"
+  }
+}
